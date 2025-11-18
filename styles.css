@@ -944,4 +944,9 @@ ul.tags li a.active:hover {
         font-size: 1.8rem;
         padding-right: 2px;
     }
+
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+
 }
