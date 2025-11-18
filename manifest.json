@@ -1,0 +1,27 @@
+{
+  "name": "Shutter Stock 88",
+  "short_name": "Shutter S-88",
+  "description": "Modern, responsive landing page to showcase photography and creative work.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#1e1e1e",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "assets/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+       {
+      "src": "assets/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

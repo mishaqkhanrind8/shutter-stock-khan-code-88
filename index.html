@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Shutter Stock 88 - A sleek front-end showcase landing page for your photography or portfolio projects.">
+<title>Shutter Stock 88</title>
+
+<!-- Open Graph / Facebook / WhatsApp -->
+<meta property="og:title" content="Shutter Stock 88">
+<meta property="og:description" content="Shutter Stock 88 - Modern, responsive landing page to showcase your photography or creative work.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://shutter-stock-88.vercel.app/">
+<meta property="og:image" content="https://shutter-stock-88.vercel.app/images/dark-bg-img.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Shutter Stock 88">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Shutter Stock 88">
+<meta name="twitter:description" content="Shutter Stock 88 – A sleek front-end showcase landing page for your photography or portfolio projects.">
+<meta name="twitter:image" content="https://shutter-stock-88.vercel.app/images/dark-bg-img.webp">
+<meta name="twitter:site" content="@ishqkhanrind8">
+<meta name="twitter:creator" content="@mishaqrind8">
+
+<!-- Favicon for browsers -->
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48x48.png">
+
+<!-- Apple Touch Icon -->
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+
+<!-- Android/Chrome PWA Icons -->
+<link rel="icon" type="image/png" sizes="192x192" href="assets/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/android-chrome-512x512.png">
+
+<!-- Manifest for Progressive Web App -->
+<link rel="manifest" href="manifest.json">
+
+<!-- Meta theme color -->
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Sidebar Navigation -->
+<nav id="sidebar" class="sidebar" role="navigation" aria-label="Main Menu">
+  <h3 class="navbar-brand">Shutter Stock 88</h3>
+  
+<span id="btn-close"><i class="fa-solid fa-xmark"></i></span>
+
+  <div class="bg-dark-light">
+    <a href="#portfolio">PORTFOLIO</a>
+    <a href="#about">ABOUT ME</a>
+    <a href="#contact">CONTACT</a>
+  </div>
+</nav>
+
+<!-- Top navigation bar (Mobile view) -->
+<header id="topmenu">
+  <div><span class="top-navbar-brand">Shutter Stock 88</span></div>
+  <div><button id="btn-toggler" aria-label="Open Menu">☰</button></div>
+</header>
+
+<!-- Screen overlay when mobile menu opens -->
+<div id="overlay"></div>
+
+<!-- Main content container -->
+<main id="content">
+
+  <!-- Portfolio Title -->
+  <h1 id="portfolio">
+    <span class="color-gray"><span class="h-style">S</span>hutter <span class="h-style">S</span>tock 88</span>
+  </h1>
+
+  <!-- Intro text -->
+  <p class="explore">
+    Explore images for entertainment.
+    <span class="d-sm-none">Stay connected for more updates.</span>
+  </p>
+
+  <!-- Responsive Photo Grid -->
+  <div id="photo-grid" class="photo-grid">
+      <img src="images/img-1.webp" alt="image-1" loading="lazy">
+      <img src="images/img-2.webp" alt="image-2" loading="lazy">
+      <img src="images/img-4.webp" alt="image-3" loading="lazy">
+      <img src="images/img-2.webp" alt="image-4" loading="lazy">
+      <img src="images/img-8.webp" alt="image-5" loading="lazy">
+      <img src="images/img-6.webp" alt="image-6" loading="lazy">
+      <img src="images/img-9.webp" alt="image-7" loading="lazy">
+      <img src="images/img-3.webp" alt="image-8" loading="lazy">
+      <img class="d-md-none" src="images/img-7.webp" alt="image-9" loading="lazy">
+  </div>
+
+<!-- Pagination -->
+<div id="pagination" role="navigation" aria-label="Page Navigation">
+  <a href="#" aria-label="Previous Page">&laquo;</a>
+  <a href="#" class="active" aria-current="page">1</a>
+  <a href="#" aria-label="Page 2">2</a>
+  <a href="#" aria-label="Page 3">3</a>
+  <a href="#" aria-label="Page 4">4</a>
+  <a href="#" aria-label="Next Page">&raquo;</a>
+</div>
+
+<!-- Image Modal -->
+<div id="modal" role="dialog" aria-modal="true" aria-hidden="true"
+ aria-label="Image Preview">
+  <button class="btn-close-1" aria-label="Close Image">
+    <i class="fa-solid fa-xmark"></i>
+  </button>
+  <div>
+    <img id="modal-img" alt="">
+    <p id="modal-caption" aria-live="polite"></p>
+  </div>
+</div>
+
+  <!-- About Section -->
+  <section id="about">
+    <h4 class="title">About Me</h4>
+
+    <!-- Author photo -->
+    <img src="images/dark-bg-img.webp" alt="Me" width="100%" height="auto">
+
+    <h4 class="sub-title">Ali Khan</h4>
+
+    <!-- About text -->
+    <p>
+      Some text about me. I love taking photos of people. Lorem ipsum dolor...
+    </p>
+
+    <!-- Contact details -->
+    <p>Email: <a href="mailto:aonemobilesncomputers786@gmail.com">example@example.com</a></p>
+    <p>Phone: <a href="tel:+923021905493">0302-1905493</a></p>
+
+    <!-- Skills section -->
+    <h4 class="Skills">Technical Skills</h4>
+    <p>Photography</p>
+    <div class="progress-bar"><div class="progress-1">95%</div></div>
+
+    <p>Web Design</p>
+    <div class="progress-bar"><div class="progress-2">85%</div></div>
+
+    <p>Photoshop</p>
+    <div class="progress-bar"><div class="progress-3">80%</div></div>
+
+<!-- Resume download button -->
+<button class="btn-download" aria-label="Download Resume">Download Resume</button>
+
+    <hr>
+
+    <!-- Pricing table -->
+    <h4 class="pricing">Pricing</h4>
+    <p>Choose a plan that fits your creative and business needs.</p>
+
+    <div class="packages">
+
+      <!-- Basic Package -->
+      <div class="basic-plan">
+        <h5>Basic</h5>
+        <ul>
+          <li>Web Design</li>
+          <li>Photography</li>
+          <li>5GB Storage</li>
+          <li>Mail Support</li>
+          <li><span class="s-symbol">$</span>10 <br><span class="sm-gray">per month</span></li>
+        </ul>
+        <div class="btn-section">
+          <button class="subscribe" id="openModal">Get Offer</button>
+        </div>
+      </div>
+
+      <!-- Pro Package -->
+      <div class="pro-plan">
+        <h5>Pro</h5>
+        <ul>
+          <li>Web Design</li>
+          <li>Photography</li>
+          <li>50GB Storage</li>
+          <li>Endless Support</li>
+          <li><span class="s-symbol">$</span>25 <br><span class="sm-gray">per month</span></li>
+        </ul>
+        <div class="btn-section">
+          <button class="subscribe" id="openModal-1">Get Offer</button>
+        </div>
+      </div>
+
+    </div>
+
+  <!-- Payment Modal -->
+<div id="paymentModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true"
+ aria-label="Payment Form">
+  <div class="modal-panel">
+    <button id="modal-close" aria-label="Close Payment Modal">&times;</button>
+    <h2>Secure Payment</h2>
+        <p class="muted">Enter your card and bank details safely.</p>
+
+        <!-- Payment Form -->
+        <form id="paymentForm" novalidate>
+
+          <!-- Cardholder fields -->
+          <label class="w50">Cardholder Name</label><input id="cardName"
+           name="cardName" type="text" required placeholder="Full name as on card">
+
+          <label class="w50">Card Number</label><input id="cardNumber" 
+          name="cardNumber" required maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+
+          <!-- Expiry + CVV -->
+          <div class="row">
+            <div class="col">
+              <label>Expiry (MM/YY)</label>
+              <input id="expiry" name="expiry" maxlength="5" placeholder="MM/YY" required>
+            </div>
+
+            <div class="col">
+              <label>CVV</label>
+              <input id="cvv" name="cvv" type="password" maxlength="4" placeholder="123" required>
+            </div>
+          </div>
+
+          <hr class="form-hr">
+
+          <!-- Bank details -->
+          <label class="w50">Bank Name</label><input id="bankName"
+           name="bankName" placeholder="e.g. Bank of America" required>
+
+          <label class="w50">IBAN</label><input id="iban" 
+          name="iban" placeholder="GB29 NWBK 6016 1331 9268 19" required>
+
+          <!-- Form action buttons -->
+          <div class="actions">
+        <button type="submit" class="primary" aria-label="Submit Payment">Pay Now</button>
+        <button type="button" class="secondary" id="cancelBtn" 
+        aria-label="Cancel Payment">Cancel</button>
+      </div>
+    </form>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h4>Contact Me</h4>
+
+    <!-- Short message -->
+    <p>Fill out the form and share the details with me :) I love meeting new people!</p>
+
+    <!-- Contact Form -->
+    <form id="contact-form" method="post">
+      <label>Name</label>
+      <input type="text" name="Name" required>
+
+      <label>Email</label>
+      <input type="text" name="Email" required>
+
+      <label>Message</label>
+      <input type="text" name="Message" required>
+
+      <button id="submit" class="submit" type="submit">Send Message</button>
+
+      <!-- Notification message -->
+      <div class="notification-sec">
+        <p class="alert">Message sent successfully</p>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+
+    <!-- Info block -->
+    <div class="info">
+      <h3>INFO</h3>
+      <p>Praesent tincidunt sed tellus ut rutrum...</p>
+    </div>
+
+    <!-- Blog posts block -->
+    <div class="post-section">
+      <h3>BLOG POSTS</h3>
+
+      <!-- Blog post 1 -->
+      <div class="post-1">
+        <div class="img-section">
+          <img src="images/img-1.webp" alt="blog-img-1" loading="lazy">
+        </div>
+        <div class="text-section">
+          <h5>Lorem</h5>
+          <p>Sed mattis nunc</p>
+        </div>
+      </div>
+
+      <div class="spacer"></div>
+
+      <!-- Blog post 2 -->
+      <div class="post-2">
+        <div class="img-section">
+          <img src="images/img-2.webp" alt="blog-img-2" loading="lazy">
+        </div>
+        <div class="text-section">
+          <h5>Ipsum</h5>
+          <p>Sed mattis nunc</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popular tags -->
+    <div class="tags-section">
+      <h3>POPULAR TAGS</h3>
+      <ul class="tags">
+        <li><a href="#" class="active">Portfolio</a></li>
+        <li><a href="#">Travel</a></li>
+        <li><a href="#">New York</a></li>
+        <li><a href="#">London</a></li>
+        <li><a href="#">IKEA</a></li>
+        <li><a href="#">NORWAY</a></li>
+        <li><a href="#">DIY</a></li>
+        <li><a href="#">Ideas</a></li>
+        <li><a href="#">Baby</a></li>
+        <li><a href="#">Family</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Clothing</a></li>
+        <li><a href="#">Shopping</a></li>
+        <li><a href="#">Sports</a></li>
+        <li><a href="#">Games</a></li>
+      </ul>
+    </div>
+
+  </footer>
+
+  <!-- Author credit -->
+  <div class="author-link">Powered by <a href="">Khan-Code-88</a></div>
+
+</main>
+
+<!-- Main JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
